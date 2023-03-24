@@ -37,36 +37,54 @@
         <h2>Cart</h2>
         <span class="line"></span>
         <div class="cart-items">
-          <div class="cart-item">
+          <!-- <div class="cart-item">
             <img src="images/image-product-1-thumbnail.jpg" alt="Item Thumbnail">
             <div>
               <p>Fall Limited Edition Sneakers</p>
-              <p id="cost">asdadfafds</p>
+              <p>$<span id="cost"></span> <span>x</span> <span id="count"></span> <span id="total"></span></p>
             </div>
-            <img class="icon" src="images/icon-delete.svg" alt="Delete Icon">
-          </div>
+            <img class="icon" id="delete" src="images/icon-delete.svg" alt="Delete Icon">
+          </div> -->
         </div>
         <button class="btn">Checkout</button>
       </div>
     </div>
   </header>
-  <main>
-
-  </main>
-  <!-- Sneaker Company
-
-  Fall Limited Edition Sneakers
-
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
-
-  $125.00
-  50%
-  $250.00
-
-  0
-  Add to cart -->
   
+  <main>
+    <div class="merchandise">
+      <div class="merchandise-media">
+        <img id="current-image" src="images/image-product-1.jpg" alt="Product Image">
+        <div class="thumbnails">
+          <div class="current-thumbnail" id="thumbnail"><img src="images/image-product-1-thumbnail.jpg" alt="Product Thumbnail"></div>
+          <div id="thumbnail"><img src="images/image-product-2-thumbnail.jpg" alt="Product Thumbnail"></div>
+          <div id="thumbnail"><img src="images/image-product-3-thumbnail.jpg" alt="Product Thumbnail"></div>
+          <div id="thumbnail"><img src="images/image-product-4-thumbnail.jpg" alt="Product Thumbnail"></div>
+        </div>
+      </div>
+
+      <div class="merchandise-info">
+        <h2>Sneaker Company</h2>
+        <h1>Fall Limited Edition Sneakers</h1>
+        <p>
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.
+        </p>
+        <div>
+          <h3>$<span id="price">125.00</span></h3>
+        </div>
+        <div class="cart-handle">
+          <div class="amount-handle">
+            <img class="icon" id="minus" src="images/icon-minus.svg" alt="Minus Icon">
+            <p id="amount">0</p>
+            <img class="icon" id="plus" src="images/icon-plus.svg" alt="Plus Icon">
+          </div>
+          <button id="add" class="btn"><img src="images/icon-cart.svg" alt="Cart Icon">Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
   <footer>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
