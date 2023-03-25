@@ -19,7 +19,7 @@
       <img class="icon" id="hamburger" src="images/icon-menu.svg" alt="Hamburger Icon">
       <img class="logo" src="images/logo.svg" alt="Logo">
       <ul class="nav-list close">
-        <li><img class="icon" id="close"src="images/icon-close.svg" alt="Close Icon"></li>
+        <li><img class="icon" id="close" src="images/icon-close.svg" alt="Close Icon"></li>
         <li><a href="">Collections</a></li>
         <li><a href="">Men</a></li>
         <li><a href="">Women</a></li>
@@ -30,12 +30,12 @@
     </nav>
 
     <div class="info">
-      <img class="icon" id="cart" src="images/icon-cart.svg" alt="Cart Icon">
+      <img class="icon" id="cart" src="images/icon-cart.svg" alt="Cart Icon"><span class="close" id="cart-count">3</span></img>
       <img class="avatar" src="images/image-avatar.png" alt="Avatar">
 
       <div class="cart close">
         <h2>Cart</h2>
-        <span class="line"></span>
+        <span class="line close"></span>
         <div class="cart-items">
           <!-- <div class="cart-item">
             <img src="images/image-product-1-thumbnail.jpg" alt="Item Thumbnail">
@@ -45,8 +45,9 @@
             </div>
             <img class="icon" id="delete" src="images/icon-delete.svg" alt="Delete Icon">
           </div> -->
+          <p id="empty">Your cart is empty.</p>
         </div>
-        <button class="btn">Checkout</button>
+        <button id="checkout" class="btn close">Checkout</button>
       </div>
     </div>
   </header>
@@ -63,6 +64,20 @@
         </div>
       </div>
 
+      <div class="merchandise-media-hover close">
+        <img class="icon" id="close-hover" src="images/icon-close.svg" alt="Close Icon">
+        <img class="icon" id="prev" src="images/icon-previous.svg">
+        <img class="icon" id="next" src="images/icon-next.svg">
+        <img id="current-image" src="images/image-product-1.jpg" alt="Product Image">
+        <div class="thumbnails">
+          <div class="current-thumbnail" id="thumbnail"><img src="images/image-product-1-thumbnail.jpg" alt="Product Thumbnail"></div>
+          <div id="thumbnail"><img src="images/image-product-2-thumbnail.jpg" alt="Product Thumbnail"></div>
+          <div id="thumbnail"><img src="images/image-product-3-thumbnail.jpg" alt="Product Thumbnail"></div>
+          <div id="thumbnail"><img src="images/image-product-4-thumbnail.jpg" alt="Product Thumbnail"></div>
+        </div>
+        <div class="hover-close-bg"></div>
+      </div>
+
       <div class="merchandise-info">
         <h2>Sneaker Company</h2>
         <h1>Fall Limited Edition Sneakers</h1>
@@ -71,7 +86,10 @@
           Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.
         </p>
         <div>
-          <h3>$<span id="price">125.00</span></h3>
+          <h3 id="price-info">
+            <span id="price">$125.00 <span id="discount">50%</span></span>
+            <span id="original-price">$250.00</span>
+          </h3>
         </div>
         <div class="cart-handle">
           <div class="amount-handle">
